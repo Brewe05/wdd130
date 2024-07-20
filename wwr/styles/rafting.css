@@ -1,99 +1,191 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ:wght@100..400&display=swap');
 
-:root {
-    --primary-color:#2ECC40;
-    --secondary-color:#FFC107;
-    --background-color:#F7F7F7;
-    --heading-color:#333;
-    --paragraph-color:#666;
+body {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+padding: 0;
+max-width: 1200px;
+margin: 0 auto;
 }
 
-body{
-    font-family:'Playwrite+NZ', Playwrite-NZ;
-    margin:0;
-    padding:0;
-    max-width:1200px;
-    margin:0 auto;
-}
 h1 {
-    position: relative;
+font-size: 36px;
+color: var(--heading-color);
 }
 
 h2, h3, h4, h5, h6 {
-    color: var(--heading-color);
+color: var(--heading-color);
+font-size: 24px;
 }
 
 p {
-    color: var(--paragraph-color);
+color: var(--paragraph-color);
+font-size: 18px;
 }
 
 a {
-  text-decoration: none; /* Remove underlines from social media links */
+text-decoration: none;
+color: var(--secondary-color);
 }
 
 .social-media-links a:hover {
-  color: var(--secondary-color);
+color: var(--secondary-color);
 }
-
-.hero h1 {
-  font-size: 48px;
-}
-
-.article {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
 
 .logo {
-    position: relative;
-    z-index: 1;
-    top: 20px;
-    left: 20px;
-    width: 20%;
-    height: auto;
-    max-width: 100px;
+position: absolute;
+z-index: 1;
+top: 150px;
+left: 1px;
+max-width: 80px;
+margin: 10px;
+grid-column: 1;
 }
 
 .site {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1;
-    background-color:#FFC107;
-    font: bold;
-    padding:0 auto;
-  }
+position: relative;
+z-index: 1;
+background-color: #FFC107;
+font-family: Open Sans, sans-serif;
+font-weight: bold;
+font-size: 24px;
+padding: 10px;
+border: 1px solid #080808;
+}
 
-.hyper {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1;
-    background-color:#FFC107;
+.nav {
+grid-column: 2;
+display: flex;
+justify-content: space-between;
+z-index: 1;
 }
 
 .hero {
-    position: relative;
-    height: 300px;
-    background-image: linear-gradient(to bottom, #2ECC40, #FFC107);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+position: relative;
+background-image: linear-gradient(to bottom,#2ECC40,#FFC)
 }
 
+.nav a:hover {
+color: tomato;
+font-weight: 700;
+text-decoration: underline;
+}
 
+header {
+display: grid;
+grid-template-columns: 1fr 3fr;
+grid-gap: 10px;
+align-items: center;
+}
 
+.adventure {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+
+.adventure figure {
+flex-basis: 100px;
+margin: 10px;
+}
+
+.adventure figcaption {
+font-size: 18px;
+font-weight: bold;
+color: #fff;
+background-color: #2ECC40;
+padding: 10px;
+border-radius: 10px;
+}
+
+.adventure figure img {
+width: 150px;
+height: 150px;
+object-fit: cover; border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #2ECC40;
+padding: 20px;
+}
+
+header img {
+width: 100px;
+height: 100px;
+margin: 20px;
+border-radius: 50%;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #FFC107;
+padding: 20px;
+}
+
+.nav a {
+color: #fff;
+text-decoration: none;
+font-size: 24px;
+margin: 20px;
+}
+
+footer {
+background-color: #2ECC40;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer p {
+color: #fff;
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+footer a {
+margin: 10px;
+}
+
+footer img {
+width: 40px;
+height: 40px;
+margin: 10px;
+}
+
+footer .social-media {
+display: flex;
+justify-content: flex-end;
+}
+
+.history {
+position: relative;
+}
+
+.history img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh; /* Adjust the height to your liking */
+object-fit: cover;
+}
+
+.history p {
+position: relative;
+z-index: 1;
+color: #121213;
+font-size: 18px;
+padding: 20px;
+}
 
