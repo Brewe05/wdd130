@@ -1,0 +1,59 @@
+/* Add color boxes and borders for headings */
+h1 {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px;
+  border: 1px solid #0069d9;
+  text-align: center;
+}
+
+/* Make each question start on a new line */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Add more space between questions */
+label {
+  margin-bottom: 40px;
+}
+
+/* Style the form inputs */
+input, textarea, select {
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Style the question numbers */
+label::before {
+  content: attr(for) ". ";
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Display the question text */
+label span {
+  display: inline;
+}
+
+
+
