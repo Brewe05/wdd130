@@ -1,0 +1,197 @@
+:root {
+    /* I decieded to be able to change my colors easily if i didnt like them i made this:*/
+    --primary-color: #164e63;
+    --secondary-color: #0e7490;
+    --accent1-color: #263238;
+    --accent2-color: #e0f2fe;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #f4f8fa;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px;
+}
+
+.site {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    margin: 16px;
+    padding: 8px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(224, 242, 254, 0.9);
+    color: var(--accent1-color);
+    padding: 16px;
+    margin: 0 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin: 0 0 10px 15px;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.history {
+    background-color: var(--accent2-color);
+    padding: 16px;
+    margin: 20px 0;
+    border: 1px solid var(--secondary-color);
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.history img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 0 16px 10px 0;
+    border: 2px solid var(--primary-color);
+}
+
+.history::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.history article {
+    clear: both;
+    text-align: center;
+    background-color: white;
+    padding: 24px;
+    border: 1px solid var(--secondary-color);
+}
+
+.history article h2 {
+    color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px;
+}
+
+footer p {
+    margin: 8px;
+    padding: 8px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px;
+    margin: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+}
